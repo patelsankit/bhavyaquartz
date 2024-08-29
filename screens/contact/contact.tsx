@@ -16,12 +16,12 @@ export default function Contact() {
 
   const { name, email, message, number } = formData;
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event :any) => {
     event.preventDefault();
 
     // Check if all fields are filled
