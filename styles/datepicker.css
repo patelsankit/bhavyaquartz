@@ -1,0 +1,78 @@
+.react-datepicker__day--in-range {
+    @apply !bg-transparent;
+}
+.react-datepicker__day--keyboard-selected {
+    @apply !bg-transparent;
+}
+.react-datepicker__day--keyboard-selected:hover {
+    @apply !bg-transparent;
+}
+.react-datepicker .react-datepicker__day--selected {
+    @apply !bg-primary;
+}
+.react-datepicker__day--in-range {
+    @apply !bg-primary text-[#000];
+}
+
+.date-picker {
+    @apply min-h-[44px] w-full rounded-lg border border-none  px-4 py-[10px] text-12 leading-5 shadow-sm outline outline-1 outline-gray-200/70  placeholder:text-14 placeholder:text-gray-300/80 focus-visible:outline-1 focus-visible:outline-gray-500 md:text-16;
+}
+
+.react-datepicker__close-icon {
+    @apply !right-9 !top-0.5;
+}
+
+.react-datepicker__triangle {
+    @apply !hidden;
+}
+.react-datepicker__header {
+    @apply !border-[0px] !bg-white !pb-4 !pt-0;
+}
+.react-datepicker__navigation {
+    @apply !overflow-y-hidden;
+}
+.react-datepicker__navigation-icon--previous {
+    @apply !-right-[10px] !top-[11px];
+}
+.react-datepicker__navigation-icon--next {
+    @apply !-left-[10px] !top-[11px];
+}
+.react-datepicker__day-name {
+    @apply !text-14 !font-500 ;
+}
+.react-datepicker__current-month {
+    @apply text-black pb-3;
+}
+.react-datepicker__day {
+    @apply !text-14 ;
+}
+.react-datepicker__day--selected {
+    @apply !rounded-[20px] !font-500 !text-white;
+}
+.react-datepicker {
+    @apply !rounded !border-gray !px-2 !py-5 sm:!px-6;
+}
+.date-range-picker .react-datepicker-popper[data-placement^='bottom'] {
+    transform: translate(0, 64px) !important;
+}
+.react-datepicker__day--disabled {
+    /* @apply !opacity-20; */
+}
+.react-datepicker-wrapper {
+    @apply w-full;
+}
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+    @apply h-10 w-full;
+}
+
+/* .react-datepicker-wrapper .react-datepicker__input-container input {
+    @apply flex bg-white h-full w-full rounded-lg border border-gray-300 px-3 py-2 text-12 font-400 placeholder:text-12 placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300 md:text-14 md:placeholder:text-14 lg:h-10 ;
+} */
+.react-datepicker-wrapper .react-datepicker__input-container input {
+    @apply w-full rounded-lg border outline-gray outline outline-1 border-none px-[14px] py-[10px] text-12 min-h-[44px] leading-5 shadow-sm focus-visible:outline-1 placeholder:text-gray-300/80 focus-visible:outline-gray md:text-16;
+}
+
+.react-datepicker-popper {
+    @apply z-[9999];
+}

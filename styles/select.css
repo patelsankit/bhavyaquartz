@@ -1,0 +1,65 @@
+.short_data .css-b62m3t-container {
+  @apply !w-[100px];
+}
+
+.css-b62m3t-container:focus-visible {
+  @apply !border-none !outline-none;
+}
+
+.css-nh18jz-control {
+  @apply !bg-white !outline-0;
+}
+
+.css-3l9ity-control {
+  @apply !border hover:!bg-white-100;
+}
+.css-1qvdu0w-control {
+  @apply !bg-white !border-gray hover:border-gray !border;
+}
+.css-1jqq78o-placeholder {
+  @apply text-14;
+}
+.css-1u9des2-indicatorSeparator {
+  @apply hidden;
+}
+
+.short_data .css-1xc3v61-indicatorContainer {
+  @apply !px-0;
+}
+
+.custom-select__multi-value__label {
+  @apply !text-14 !text-gray-600 !bg-transparent !min-w-max;
+}
+
+.custom-select__multi-value {
+  @apply items-center !bg-gray-50 !rounded-md !p-0 !h-7;
+}
+
+.custom-select__multi-value__remove {
+  @apply !bg-transparent;
+}
+.custom-select__option--is-focused {
+  @apply !bg-[#bdbcbc71] !text-black !outline-0 !border-0 !border-gray ;
+}
+
+.custom-select__control--menu-is-open{
+@apply !outline-0 !border !border-gray;
+}
+.custom-select-cst .css-nh18jz-control {
+  @apply border-[#E4E4E4] !bg-[rgb(242,242,242,0.33)];
+}
+.css-1ob4vqr-control{
+  @apply hover:!border-gray hover:!border !border !border-gray;
+}
+.custom-select-cst .css-dcctf9-Input {
+  @apply text-black placeholder:!text-black;
+}
+.custom-select-cst .css-1jqq78o-placeholder {
+  @apply text-black;
+}
+.custom-select-cst .css-1xc3v61-indicatorContainer {
+  @apply text-black !p-0;
+}
+.custom-select-cst .css-15lsz6c-indicatorContainer {
+  @apply text-black !p-0;
+}

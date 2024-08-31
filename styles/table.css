@@ -1,0 +1,36 @@
+/* .btn-disable {
+    @apply cursor-not-allowed opacity-50;
+} */
+
+.data-table thead th::before {
+  content: "";
+  @apply absolute left-4 top-1/2 h-2 w-3 -translate-y-1/2 bg-[url('/images/svg/table-arrow-down.svg')] bg-contain bg-no-repeat;
+}
+
+.data-table thead th.sort-asc::before {
+  @apply !bg-[url('/images/svg/table-arrow-down.svg')] bg-contain bg-no-repeat;
+  content: "";
+}
+
+.data-table thead th.sort-desc::before {
+  @apply !bg-[url('/images/svg/table-arrow-up.svg')] bg-contain bg-no-repeat;
+}
+
+.data-table thead .disabledSort::before {
+  @apply !h-0 !w-0 !bg-none;
+}
+.cst-pagination{
+  @apply flex gap-1.5 justify-end;
+}
+.cst-pagination li a{
+  @apply rounded-md border p-2 w-10 h-10 text-center hover:bg-white/10 hover:text-white block;
+}
+.cst-pagination li.next a{
+  @apply w-24;
+}
+.cst-pagination li.previous a{
+  @apply w-24;
+}
+.cst-pagination li.pagination__link--active a{
+  @apply bg-white/20 ;
+}

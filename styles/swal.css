@@ -1,0 +1,42 @@
+.success_component {
+    @apply grid items-center justify-items-center gap-3 sm:justify-items-start;
+}
+
+.success_component .success_icon {
+    @apply flex h-20 w-20 items-center justify-center rounded-full bg-[#DEF7EC];
+}
+
+
+.success_massage {
+    /* @apply sm:col-span-3; */
+}
+
+.success_component .success_icon .icon_check {
+    @apply h-16 w-16 stroke-[2.5] font-700 text-[#027A48];
+}
+
+.error_component {
+    @apply grid items-center justify-items-center gap-3;
+}
+
+.error_component .error_icon {
+    @apply flex h-20 w-20 items-center justify-center rounded-full bg-red-600/80;
+}
+
+.error_component .error_icon .icon_cross {
+    @apply h-16 w-16 stroke-[2.5] font-700 text-white;
+}
+
+.swal-actions {
+    @apply w-full !justify-end pr-9;
+}
+.swal2-confirm {
+    @apply w-20;
+}
+.swal2-popup {
+    @apply !rounded-[20px] bg-white py-3 sm:py-6;
+}
+div:where(.swal2-container)
+    button:where(.swal2-styled).swal2-default-outline:focus {
+    @apply !shadow-none;
+}
