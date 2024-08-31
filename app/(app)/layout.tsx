@@ -5,6 +5,7 @@ import Providers from "@/utils/Provider";
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { Toaster } from "react-hot-toast";
+
 export default function Layout({ children }: any) {
   return (
     <>
