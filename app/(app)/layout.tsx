@@ -10,7 +10,7 @@ export default function Layout({ children }: any) {
     <>
       {/* <Providers> */}
         <NextUIProvider>
-          <NextThemesProvider attribute="class" defaultTheme="dark">
+          <NextThemesProvider attribute="class" defaultTheme="light">
             <Toaster position="top-right" reverseOrder={false} />
             <NavbarComponent />
             {children}

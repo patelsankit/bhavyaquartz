@@ -22,6 +22,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/Dropdown";
+import Image from "next/image";
 
 export default function NavbarComponent() {
   const menuItems = [
@@ -49,8 +50,15 @@ export default function NavbarComponent() {
       <NavbarContent className="sm:hidden sm:pr-3" justify="center">
         <Link href="/">
           <NavbarBrand>
-            <Logo />
-            <p className="font-bold text-inherit">PARISHRAM</p>
+          <Image
+              src="/images/logo.svg"
+              height="100"
+              width="100"
+              className=""
+              alt="logo"
+            />
+          {/* <Logo />
+            <p className="font-bold text-inherit">PARISHRAM</p> */}
           </NavbarBrand>
         </Link>
       </NavbarContent>
@@ -58,8 +66,13 @@ export default function NavbarComponent() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <Link href="/">
           <NavbarBrand>
-            <Logo />
-            <p className="font-bold text-inherit">PARISHRAM</p>
+          <Image
+              src="/images/logo.svg"
+              height="100"
+              width="150"
+              className=""
+              alt="logo"
+            />
           </NavbarBrand>
         </Link>
 
@@ -74,40 +87,6 @@ export default function NavbarComponent() {
         <NavbarItem>
           <Link
             className={`${
-              pathname.includes("nextcomponents")
-                ? "text-blue-600 underline"
-                : ""
-            }`}
-            href="/nextcomponents"
-          >
-            Components
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            className={`${
-              pathname.includes("chat")
-                ? "text-blue-600 underline"
-                : ""
-            }`}
-            href="/chat"
-          >
-            Chat
-          </Link>
-        </NavbarItem>
-        {/* <NavbarItem>
-          <Link
-            className={`${
-              lastSegment === "kanban" ? "text-blue-600 underline" : ""
-            }`}
-            href="/kanban"
-          >
-            Kanban
-          </Link>
-        </NavbarItem> */}
-        <NavbarItem>
-          <Link
-            className={`${
               lastSegment === "contact" ? "text-blue-600 underline" : ""
             }`}
             href="/contact"
@@ -115,16 +94,6 @@ export default function NavbarComponent() {
             Contact
           </Link>
         </NavbarItem>
-        {/* <NavbarItem>
-          <Link
-            className={`${
-              lastSegment === "animate" ? "text-blue-600 underline" : ""
-            }`}
-            href="/animate"
-          >
-            Animation
-          </Link>
-        </NavbarItem> */}
       </NavbarContent>
 
       <NavbarContent justify="end" className="gap-2 sm:gap-4">
@@ -135,8 +104,8 @@ export default function NavbarComponent() {
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} href="#" variant="flat">
-            Sign Up
+          <Button className="btn btn-primary" as={Link} href="#" variant="flat">
+          WhatsApp Inquiry
           </Button>
         </NavbarItem>
       </NavbarContent>

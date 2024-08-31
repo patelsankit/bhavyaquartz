@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <>
       <div className="text-center py-5">Welcome home</div>
-      <div className="text-center">
+      {/* <div className="text-center">
         <Button onPress={onOpen}>Open Modal</Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
@@ -57,7 +57,7 @@ const HomePage = () => {
           </ModalContent>
         </Modal>
       </div>
-        <CardComponentspage />
+        <CardComponentspage /> */}
 
     </>
   );

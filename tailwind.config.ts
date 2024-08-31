@@ -101,3 +101,5 @@ function addVariablesForColors({ addBase, theme }: any) {
     ":root": newVars,
   });
 }
+
+// background: linear-gradient(to right, #032F4E, #03639E);
